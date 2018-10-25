@@ -31,14 +31,16 @@ class Triangle
   end
 
   def kind
+    kindy = ""
     if self.is_valid?
       if self.is_equilateral?
-        :equilateral
+        kindy = "equilateral"
       elsif self.is_isosceles?
-        :isosceles
+        kindy = "isosceles"
       elsif self.is_scalene?
-        :scalene
+        kindy = "scalene"
       end
+      kindy.to_sym
     else
       begin
         raise TriangleError
