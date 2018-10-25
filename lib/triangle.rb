@@ -46,7 +46,7 @@ class Triangle
           puts error.message
       end
     end
-    binding.pry
+    #binding.pry
   end
 
   class TriangleError < StandardError
