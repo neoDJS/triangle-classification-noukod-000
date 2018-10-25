@@ -42,8 +42,8 @@ class Triangle
       end
       kindy.to_sym
     else
+      raise TriangleError
       begin
-        raise TriangleError
       rescue TriangleError => error
           puts error.message
       end
